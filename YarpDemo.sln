@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo-API", "Demo-API\Demo-A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo-Blazor-UI", "Demo-Blazor-UI\Demo-Blazor-UI.csproj", "{1DBC20BC-15BA-4265-9780-E946101B7A0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway", "Gateway\Gateway.csproj", "{5723E337-23AC-4971-84EF-F52CB0762A8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway", "Gateway\Gateway.csproj", "{5723E337-23AC-4971-84EF-F52CB0762A8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotherDemo-API", "AnotherDemo-API\AnotherDemo-API.csproj", "{1F74EA46-9D7B-43EC-91E2-C4272CC112BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{5723E337-23AC-4971-84EF-F52CB0762A8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5723E337-23AC-4971-84EF-F52CB0762A8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5723E337-23AC-4971-84EF-F52CB0762A8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F74EA46-9D7B-43EC-91E2-C4272CC112BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F74EA46-9D7B-43EC-91E2-C4272CC112BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F74EA46-9D7B-43EC-91E2-C4272CC112BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F74EA46-9D7B-43EC-91E2-C4272CC112BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

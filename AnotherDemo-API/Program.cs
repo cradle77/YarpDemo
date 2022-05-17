@@ -1,4 +1,4 @@
-namespace Demo_API
+namespace AnotherDemo_API
 {
     public class Program
     {
