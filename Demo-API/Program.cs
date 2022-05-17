@@ -14,11 +14,6 @@ namespace Demo_API
 
             // Configure the HTTP request pipeline.
 
-            app.UseCors(configurePolicy => 
-            {
-                configurePolicy.AllowAnyOrigin();
-            });
-
             app.UseAuthorization();
 
             app.MapControllers();
