@@ -1,3 +1,6 @@
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using Microsoft.Identity.Web;
+
 namespace Gateway
 {
     public class Program
@@ -5,11 +8,12 @@ namespace Gateway
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
             builder.Services.AddReverseProxy()
                 .LoadFromConfig(builder.Configuration.GetSection("ReverseProxy"));
             
             var app = builder.Build();
-            
+
             app.MapReverseProxy();
             app.Run();
         }
