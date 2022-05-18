@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.Identity.Web;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Gateway
 {
@@ -21,7 +22,16 @@ namespace Gateway
                     .AddAuthenticationSchemes("Cookies"));
             });
 
+            var cert = new X509Certificate2(Path.Combine(AppContext.BaseDirectory, "client.pfx"), "1234");
+
             builder.Services.AddReverseProxy()
+                .ConfigureHttpClient((context, handler) =>
+                {
+                    handler.SslOptions.ClientCertificates = new X509CertificateCollection
+                    (
+                        new[] { cert }
+                    );
+                })
                 .LoadFromConfig(builder.Configuration.GetSection("ReverseProxy"));
             
             var app = builder.Build();

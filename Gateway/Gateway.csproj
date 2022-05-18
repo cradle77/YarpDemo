@@ -7,6 +7,12 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <None Include="..\client.pfx" Link="client.pfx">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Yarp.ReverseProxy" Version="1.1.0" />
 
 		<PackageReference Include="Microsoft.Identity.Web" Version="1.1.0" />
