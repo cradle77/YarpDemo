@@ -9,7 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo-Blazor-UI", "Demo-Blaz
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway", "Gateway\Gateway.csproj", "{5723E337-23AC-4971-84EF-F52CB0762A8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotherDemo-API", "AnotherDemo-API\AnotherDemo-API.csproj", "{1F74EA46-9D7B-43EC-91E2-C4272CC112BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnotherDemo-API", "AnotherDemo-API\AnotherDemo-API.csproj", "{1F74EA46-9D7B-43EC-91E2-C4272CC112BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Certificate", "Certificate", "{A1B3FBED-4228-4C4A-BC47-065CD2FCB89B}"
+	ProjectSection(SolutionItems) = preProject
+		New-Cert.ps1 = New-Cert.ps1
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
